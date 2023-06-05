@@ -1,3 +1,4 @@
+import { AuthService } from './auth/auth/auth.service';
 import { RecipeService } from './recipes/recipe.service';
 import { AppRoutingModule } from './app.routing.module';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
@@ -41,7 +42,7 @@ import { AuthComponent } from './auth/auth/auth.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [ShoppingListService, RecipeService],
+  providers: [ShoppingListService, RecipeService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
